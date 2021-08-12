@@ -54,6 +54,8 @@ public class ControleDeVacinaApplication {
 		
 		System.out.println("Vacina tomada: " + vacinaTipo);
 		
+		System.out.println("Data da primeira dose (dia/mês/ano): " + data.getDayOfMonth() + "/" + data.getMonthValue() + "/" + data.getYear());
+		
 		String texto = null;
 		if (vacina == 1) {
 			data = data.plusDays(14L);
