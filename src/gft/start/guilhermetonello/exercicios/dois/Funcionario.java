@@ -11,7 +11,7 @@ public class Funcionario {
 	public Funcionario(String nome, Cargo cargo) {
 		this.nome = nome;
 		this.cargo = cargo;
-		setSalario(cargo);
+		setSalario();
 	}
 	
 	public String getNome() {
@@ -28,13 +28,14 @@ public class Funcionario {
 	
 	public void setCargo(Cargo cargo) {
 		this.cargo = cargo;
+		setSalario();
 	}
 	
 	public double getSalario() {
 		return salario;
 	}
 	
-	public void setSalario(Cargo cargo) {
+	public void setSalario() {
 		switch (cargo) {
 			case ESTAGIARIO:
 				this.salario = 800.0;
