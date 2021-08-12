@@ -67,5 +67,9 @@ public class Funcionario {
 		}
 		return null;
 	}
+	
+	public void imprimirDados() {
+		System.out.println(this.toString());
+	}
 
 }
